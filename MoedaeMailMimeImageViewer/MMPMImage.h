@@ -8,6 +8,6 @@
 
 #import <MoedaeMailPlugins/MoedaeMailPlugins.h>
 
-@interface MMPMImage : MMPBaseMimeView
+@interface MMPMImage : MMPAttributedStringBase
 
 @end
