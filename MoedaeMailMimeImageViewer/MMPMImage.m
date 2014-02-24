@@ -11,7 +11,7 @@
 @implementation MMPMImage
 
 +(NSSet*) contentTypes {
-    return [NSSet setWithObjects:@"IMAGE/JPEG",@"IMAGE/GIF", @"IMAGE/PNG", nil];
+    return [NSSet setWithObjects:@"IMAGE/JPEG",@"IMAGE/JPG",@"IMAGE/BMP",@"IMAGE/GIF", @"IMAGE/PNG", nil];
 }
 
 -(void) loadData {
