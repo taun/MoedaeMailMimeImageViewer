@@ -15,8 +15,16 @@
 }
 
 -(void) loadData {
+    NSImage* messageImage;
+    
     NSData* nsData = self.node.decoded;
-    NSImage* messageImage = [[NSImage alloc] initWithData: nsData];
+    if (nsData) {
+        messageImage = [[NSImage alloc] initWithData: nsData];
+    } else {
+        // todo: set messageImage to an image indicating no image.
+        // maybe the ubiquitous red circle with a line through it.
+    }
+
     NSTextAttachmentCell *anAttachmentCell = [[NSTextAttachmentCell
                                                alloc] initImageCell: messageImage];
     
